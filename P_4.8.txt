@@ -1,0 +1,43 @@
+Problem Statement:
+
+In one state, 52% of the voters are Republicans, and 48% are Democrats.
+In a second state, 47% of the voters are Republicans, and 53% are Democrats.
+Suppose a simple random sample of 100 voters are surveyed from each state.
+What is the probability that the survey will show a greater percentage of Republican voters in the second state than in the first state?
+
+Solution:
+let 
+P1 = the proportion of Republican voters in the first state,
+P2 = the proportion of Republican voters in the second state, 
+
+p1 = the proportion of Republican voters in the sample from the first state,
+p2 = the proportion of Republican voters in the sample from the second state. 
+
+The number of voters sampled from the 
+1st state (n1) = 100
+2nd state (n2) = 100.
+
+
+n1P1 = 100 * 0.52 = 52,
+n1(1 - P1) = 100 * 0.48 = 48, 
+
+n2P2 = 100 * 0.47 = 47, 
+n2(1 - P2) = 100 * 0.53 = 53
+
+Mean of the difference: E(p1 - p2) = P1 - P2 = 0.52 - 0.47 = 0.05.
+
+Standard deviation of the difference.
+sd = sqrt{ [ P1(1 - P1) / n1 ] + [ P2(1 - P2) / n2 ] } 
+sd = sqrt{ [ (0.52)(0.48) / 100 ] + [ (0.47)(0.53) / 100 ] } 
+sd = sqrt (0.002496 + 0.002491) = sqrt(0.004987) = 0.0706
+
+Find the probability. This problem requires us to find the probability that p1 is less than p2. 
+This is equivalent to finding the probability that p1 - p2 is less than zero.
+
+Probability, Transform the random variable (p1 - p2) into a z-score.
+z p1 - p2 = (x - µ p1 - p2 ) / sd = = (0 - 0.05)/0.0706 = -0.7082
+
+Using Stat Trek's Normal Distribution Calculator,
+    The probability of a z-score being -0.7082 or less is 0.24.
+
+Hence the probability that the survey will show a greater percentage of Republican voters in the second state than in the first state is 0.24.
